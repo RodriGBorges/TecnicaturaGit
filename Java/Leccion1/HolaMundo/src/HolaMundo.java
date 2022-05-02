@@ -91,5 +91,66 @@ public class HolaMundo {
         System.out.println("Resultado: " + titulo2 + " " + usuario2);
 
         */
+        
+        // Clase 4 //
+        // TIPOS NÚMERICOS ENTEROS
+        
+        /*
+        
+        //byte numEnteroByte = 10;
+        byte numEnteroByte = 127; // Max
+        // byte numEnteroByte = (byte)129; Lo obligamos a convertir el valor númerico entero en byte
+        //El compilador nos avisa que se han ocupado los 127 números positivos, al pasar el rango se pierde información por lo tanto nos da -127
+        System.out.println("numEnteroByte = " + numEnteroByte);
+        System.out.println("Valor mínimo del byte:" + Byte.MIN_VALUE);
+        System.out.println("Valor máximo del byte:" + Byte.MAX_VALUE);
+        System.out.println("");
+        
+        //short numEnteroShort = 10;
+        short numEnteroShort = 32767; // Max
+        //short numEnteroShort = (short)32768; // Pasa el mismo problema, pérdida de bits al momento de hacer la conversión
+        System.out.println("numEnteroShort = " + numEnteroShort);
+        System.out.println("Valor mínimo del short:" + Short.MIN_VALUE);
+        System.out.println("Valor máximo del short:" + Short.MAX_VALUE);
+        System.out.println("");
+        
+        //int numEnteroInt = 10;
+        int numEnteroInt = 2147483647; // Max
+        //int numEnteroInt = (int)2147483648L; por más que se le fuerze no se arregla el error, debemos ponerle una L,
+        //al poner la letra L pasa a ser un dato de tipo long, pero sin embargo seguimos teniendo pérdida de información
+        System.out.println("numEnteroInt = " + numEnteroInt);
+        System.out.println("Valor mínimo del int:" + Integer.MIN_VALUE);
+        System.out.println("Valor máximo del int:" + Integer.MAX_VALUE);
+        System.out.println("");
+        
+        //long numEnteroLong = 10;
+        long numEnteroLong = 9223372036854775807L; // Max, Java toma los números siempre por tipo Int, se debe poner la L al final.
+        System.out.println("numEnteroLong = " + numEnteroLong);
+        System.out.println("Valor mínimo del long:" + Long.MIN_VALUE);
+        System.out.println("Valor máximo del long:" + Long.MAX_VALUE);
+        System.out.println("");
+        
+        
+        //float numFloat = 10.0F; La F para indicarle que es un número tipo Flotante ya que por default Java lo toma como un tipo de dato Double
+        // o tambíen se puede poner (float)10.0
+        float numFloat = 3.4028235E38F;
+        //float numFloat = (float)3.4028236E38; Si superamos el máximo vamos a generar una pérdida de información
+        // Si superamos el número máximo nos marca como Infinity = Inválido
+        System.out.println("numFloat = " + numFloat);
+        System.out.println("El valor mínimo de float: " + Float.MIN_VALUE);
+        // valor mínimo 1.4E-45 (E de Exponencial // Exponencial 45 posiciones a la izquierda)
+        System.out.println("El valor máximo de float: " + Float.MAX_VALUE);
+        // valor máximo 3.4028235E38 (Exponencial 38 posiciones a la derecha)
+        System.out.println("");
+        
+        //double numDouble = 10;
+        double numDouble = 1.7976931348623157E308; //No hace falta poner la D al final
+        System.out.println("numDouble = " + numDouble);
+        System.out.println("El valor mínimo de double: " + Double.MIN_VALUE);
+        // El valor mínimo de double: 4.9E-324 (4.9 exponencial 324 posiciones hacia la izquierda -valor negativo-)
+        System.out.println("El valor máximo de double: " + Double.MAX_VALUE);
+        // El valor máximo de double: 1.7976931348623157E308 (exponencial 308 posiciones a la derecha)
+        
+        */
     }
 }
