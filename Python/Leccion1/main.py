@@ -137,3 +137,139 @@ autor = input("Ingrese el autor del libro: ")
 print(titulo + " de " + autor)
 
 """
+
+#  Clase 4  #
+
+# Operadores en Python parte 1
+
+# Suma " + "
+# Resta " - "
+# Multiplicación " * "
+# División " / "
+# División de tipo entero " // "
+# Exponente " ** "
+# Módulo o Residuo " % "
+
+'''
+
+operandoA = 8
+operandoB = 5
+suma = operandoA + operandoB
+# print("El resultado de la suma es: ", suma)
+# f = de format o formato
+print(f'El resultado de la suma es: , {suma}')
+
+resta = operandoA - operandoB
+print(f'El resultado de la resta es: , {resta}')
+
+multiplicacion = operandoA * operandoB
+print(f'El resultado de la multiplicación es: , {multiplicacion}')
+
+division = operandoA / operandoB
+print(f'El resultado de la division es: , {division}')
+# es igual a 1.6
+
+division = operandoA // operandoB
+print(f'El resultado de la division (int) es: , {division}')
+# es igual a 1
+
+modulo = operandoA % operandoB
+print(f'El residuo o (modulo) es: , {modulo}')
+
+exponente = operandoA ** operandoB
+print(f'El resultado del exponente es: , {exponente}')
+
+'''
+
+# Ejercicio 1 #
+'''
+alto = int(input("Escribe el alto del rectángulo: "))
+ancho = int(input("Escribe el ancho del rectángulo: "))
+
+area = alto * ancho
+perimetro = (alto + ancho) * 2
+
+print("El Área del rectángulo es: ", area)
+print("El Perímetro del rectángulo es: ", perimetro)
+
+
+print(f"El Perímetro del rectangulo es: {perimetro}, el Área es: {area}")
+
+'''
+'''
+
+miVariable3 = 10
+print(miVariable3)
+
+# Operadores de reasignación
+
+miVariable3 = miVariable3 + 1
+print(miVariable3)
+
+miVariable3 += 1
+print(miVariable3)
+
+# miVariable3 = miVariable3 - 2
+miVariable3 -= 2
+print(miVariable3)
+
+# miVariable3 = miVariable3 * 3
+miVariable3 *= 3
+print(miVariable3)
+
+# miVariable3 = miVariable3 / 2
+miVariable3 /= 2
+print(miVariable3)
+
+'''
+'''
+# Operadores de comparación
+
+d = 4
+b = 2
+
+resultado = d == b  # Comprobamos si son iguales
+print(resultado)
+
+# Operador diferente
+resultado = d != b
+print(resultado)
+
+# Operador mayor que
+resultado = d > b
+print(resultado)
+
+# Operador menor que
+resultado = d < b
+print(resultado)
+
+# Operador menor o igual que
+resultado = d <= b
+print(resultado)
+
+# Operador mayor o igual que
+resultado = d >= b
+print(resultado)
+'''
+
+# Ejercicio 2 #
+
+"""
+num = int(input("Escribe un número: "))
+if (num % 2 == 0):
+    print("Es par")
+else:
+    print("Es impar")
+"""
+
+# Ejercicio 3 #
+
+'''
+edadAdulto = 18
+edadIngresada = int(input("Ingresa tu edad: "))
+
+if (edadIngresada >= edadAdulto):
+    print(f"Su edad es: {edadIngresada} años, eres mayor de edad")
+else:
+    print(f"Su edad es: {edadIngresada} años, eres menor de edad")
+'''
