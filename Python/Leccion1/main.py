@@ -273,3 +273,123 @@ if (edadIngresada >= edadAdulto):
 else:
     print(f"Su edad es: {edadIngresada} años, eres menor de edad")
 '''
+
+# Clase 5 #
+
+# Operadores lógicos #
+"""
+#Operador and
+a = True
+b = False
+resultado = a and b
+print(resultado)
+
+# Operador or
+resultado = a or b
+print(resultado)
+
+#Operador not
+resultado = not a
+print(resultado)
+
+# Ejercicio 1 #
+numIngresado = int(input("Ingresa un número: "))
+if (numIngresado >= 0 and numIngresado <= 5):
+    print(f"True, {numIngresado} está dentro del rango")
+else:
+    print(f"False, {numIngresado} no está dentro del rango")
+# num = int(input("Ingrese un numero : "))print(num>=0 and num<=5)
+
+"""
+
+# Ejercicio con el Operador or, operador not
+
+"""
+vacaciones = False
+diaDescanso = True
+if not (vacaciones or diaDescanso):
+    print('Puede asistir al juego')
+else:
+    print('Tiene trabajo que hacer')
+
+"""
+
+# Ejercicio 2 - Rango entre 20 y 30 años
+
+edad= int(input("Ingresa tu edad: "))
+veinte = edad >= 20 and edad < 30
+print(f"veinte? {veinte}")
+treinta = edad >= 30 and edad < 40
+print(f"treinta? {treinta}")
+# forma 1
+"""
+if veinte or treinta:
+    print('Estás dentro del rango de los (20\'0) a (30\'0) años') # back slash o diagonal inversa, si es que se usa comillas simples
+else:
+    # Se puede poner comillas dobles para que no interfiera con las comillas simples
+    print("No estás dentro del rango de los (20'0) a (30'0) años")
+"""
+# forma 2
+"""
+if veinte:
+    print('Estás dentro del rango de los (20\'0) años')
+elif treinta:
+    print('Estás dentro del rango de los (30\'0) años')
+else:
+    print("No estás dentro del rango de los (20'0) a (30'0) años")
+"""
+# forma 3
+"""
+if veinte or treinta:
+    if veinte:
+        print('Estás dentro del rango de los (20\'0) años')
+    elif treinta:
+        print('Estás dentro del rango de los (30\'0) años')
+    else:
+        # Else se ignora completamente ya que pasa al else del primer if, pero se puede poner
+        print("No estás dentro del rango de los (20'0) a (30'0) años")
+else:
+    print("No estás dentro del rango de los (20'0) a (30'0) años")
+"""
+# forma 4 - Más usada
+"""
+if(edad >= 20 and edad < 30) or (edad >= 30 and edad < 40):
+    print("Estás dentro del rango de los (20'0) a (30'0) años")
+else:
+    print("No estás dentro del rango de los (20'0) a (30'0) años")
+"""
+# forma 5 - Sintáxis simplificada del operador AND
+if(20 <= edad < 30) or (30 <= edad < 40):
+    print("Estás dentro del rango de los (20'0) a (30'0) años")
+else:
+    print("No estás dentro del rango de los (20'0) a (30'0) años")
+
+# Ejercicio 3 - El mayor de los números
+
+"""
+num1 = int(input("Digite un número: "))
+num2 = int(input("Digite otro número: "))
+if(num1 > num2):
+    print(f"El número mayor es {num1}")
+elif(num2 > num1):
+    print(f"El número mayor es {num2}")
+else:
+    print("Los números son iguales")
+
+"""
+
+# Ejercicio 4 - Tienda de libros
+
+"""
+print("Ingrese los siguientes datos del libro")
+nombre = input("Ingrese el nombre del libro: ")
+id = input("Ingrese el id del libro: ")
+precio = int(input("Ingrese el precio del libro, sólo números: "))
+envio = input("Tiene envío? Ingrese True o False: ")
+
+print(f"Nombre:  {nombre}")
+print(f"ID:  {id}")
+print(f"Precio:  ${precio}")
+print(f"Envio:  {envio}")
+
+"""
