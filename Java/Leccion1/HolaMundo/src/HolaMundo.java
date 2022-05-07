@@ -152,5 +152,42 @@ public class HolaMundo {
         // El valor máximo de double: 1.7976931348623157E308 (exponencial 308 posiciones a la derecha)
         
         */
+        
+        // Clase 5 //
+        
+        //Inferencia de tipos var y tipos primitivos
+        // Ejecutar en paso a paso
+        
+        var numEntero = 20; //Las literales sin punto automaticamente son de tipo int
+        System.out.println("numEntero = " + numEntero);
+        var numFloat = 10.0F;
+        System.out.println("numFloat = " + numFloat);
+        var numDouble = 10.0; //Automaticamente con el punto se transforma en double
+        System.out.println("numDouble = " + numDouble);
+        
+        //Tipos primitivos char
+        
+        char miVariableChar = 'a';
+        System.out.println("miVariableChar = " + miVariableChar);        
+        char varCaracter = '\u0024'; // Indicamos a Java la asignación con el código unicode
+        System.out.println("varCaracter = " + varCaracter);        
+        char varCaracterDecimal = 36; // Valor decimal del juego de caracteres unicode
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal);        
+        char varCaracterSimbolo = '$'; // Un caracter especial, podemos copiar y pegar desde unicode
+        System.out.println("varCaracterSimbolo = " + varCaracterSimbolo);
+        
+        
+        var varCaracter1 = '\u0024'; // Indicamos a Java la asignación con el código unicode
+        System.out.println("varCaracter1 = " + varCaracter1);        
+        var varCaracterDecimal1 = (char)36; // Valor entero y le asigna un tipo int
+        System.out.println("varCaracterDecimal1 = " + varCaracterDecimal1);        
+        var varCaracterSimbolo1 = '$'; // Un caracter especial, podemos copiar y pegar desde unicode
+        System.out.println("varCaracterSimbolo1 = " + varCaracterSimbolo1);
+        
+        
+        int varEnteroChar = '$';
+        System.out.println("varEnteroChar = " + varEnteroChar);        
+        int caracaterChar = 'b';
+        System.out.println("caracaterChar = " + caracaterChar);
     }
 }
