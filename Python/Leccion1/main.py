@@ -393,3 +393,6 @@ print(f"Precio:  ${precio}")
 print(f"Envio:  {envio}")
 
 """
+
+# Clase 6 #
+
