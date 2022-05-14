@@ -157,6 +157,7 @@ public class HolaMundo {
         
         //Inferencia de tipos var y tipos primitivos
         // Ejecutar en paso a paso
+        /*
         
         var numEntero = 20; //Las literales sin punto automaticamente son de tipo int
         System.out.println("numEntero = " + numEntero);
@@ -189,5 +190,62 @@ public class HolaMundo {
         System.out.println("varEnteroChar = " + varEnteroChar);        
         int caracaterChar = 'b';
         System.out.println("caracaterChar = " + caracaterChar);
+
+        */
+        
+        // Clase 6 
+        // Tipos primitivos tipos booleanos
+        
+        /*
+        
+        boolean varBool = false;
+        System.out.println("varBool = " + varBool);
+        
+        //if(varBool == true) { }
+        // es lo mismo que:
+        if(varBool) {
+            System.out.println("La bandera es verde");
+        } else {
+            System.out.println("La bandera es roja");
+        }
+        
+        //Algoritmo: ¿Es mayor de edad?
+        
+        var edad = 23;
+        //var adulto = edad >= 18;
+        if(edad >= 18) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+        
+        //Conversión de tipos primitivos
+        
+        var edad = Integer.parseInt("20");
+        System.out.println("edad = " + (edad + 1));
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
+        
+        //Pedir un valor
+        var entrada = new Scanner(System.in);
+        System.out.println("Digite su edad");
+        // si ingresamos un dato tipo string nos da error "NumberFormatException"
+        edad = Integer.parseInt(entrada.nextLine());
+        System.out.println("edad = " + edad);
+        
+        */
+        
+        // Conversión de tipos primitivos en Java Parte 2
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+        
+        var fraseChar = "programadores".charAt(4);
+        System.out.println("fraseChar = " + fraseChar);
+        
+        var entrada = new Scanner(System.in);
+        System.out.println("Digite un caracter");
+        fraseChar = entrada.nextLine().charAt(0);
+        System.out.println("fraseChar = " + fraseChar);
+        
     }
 }
