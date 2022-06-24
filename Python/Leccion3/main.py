@@ -124,7 +124,8 @@ print(f'La cantidad de neutros es: {conteoNeutros}')
 # Suponga que se tiene un conjunto de calificaciones de un grupo de 10 alumnos. Realizar un algoritmo para calculcar
 # la calificación promedio y la calificación más baja de todod el grupo.
 
-calificacionPromedio = 5.5
+"""
+calificacionPromedio = 0
 calificacionBaja = 99999
 calificacionSuma = 0
 suma = 0
@@ -139,3 +140,84 @@ for i in range(10):
 calificacionPromedio = suma / 10
 print(f'La calificación promedio es: {calificacionPromedio}')
 print(f'La calificacion más baja es: {calificacionBaja}')
+"""
+
+# Clase 10 #
+
+# Ejercicio 5: Calcular el factorial de un número mayor o igual a 0
+
+"""
+for x in range(9999):
+    num = int(input('Digite un número: '))
+    if num >= 0:
+        break
+
+i = 1
+factorial = 1
+
+while i <= num:
+    print(f'{factorial} * {i} = ', end=" ")
+    factorial *= i
+    print(f'{factorial}')
+    i += 1
+
+print(f'\nEl factorial es: {factorial}')
+
+"""
+
+# Ejercicio 6: Ingresar "n" enteros, visualizar la suma de los números pares de la lista, cuántos números pares
+# existen y cuál es el promedio de los números impares.
+
+"""
+nElementos = int(input('Digite la cantidad de elementos a ingresar: '))
+
+i = 1
+sumaPares = 0
+conteoPares = 0
+sumaImpares = 0
+conteoImpares = 0
+
+while i <= nElementos:
+    num = int(input(f'{i}_Digite un número: '))
+    if num % 2 == 0:
+        sumaPares += num
+        conteoPares += 1
+    else:
+        sumaImpares += num
+        conteoImpares += 1
+    i += 1
+
+if conteoPares == 0:
+    print('No se han digitado números pares')
+else:
+    print(f'\nLa suma de los números pares es: {sumaPares}')
+    print(f'El conteo de los números pares es: {conteoPares}')
+
+if conteoImpares == 0:
+    print('No se han digitado números impares')
+else:
+    promedioImpares = sumaImpares / conteoImpares
+    print(f'\nLa suma de los números impares es: {sumaImpares}')
+    print(f'El conteo de los números impares es: {conteoImpares}')
+    print(f'El promedio de impares es: {promedioImpares}')
+"""
+
+# Ejercicio 7: Dadas las horas trabajadas de 5 personas y la tarifa de pago, calcular el salario, y la sumatoria
+# de todos los salarios
+
+"""
+i = 1
+suma = 0
+
+while i <= 5:
+    print(f'Salario del empleado {i}: ')
+    horas = float(input('Digite las horas trabajadas: '))
+    tarifa = float(input('Digite la tarifa por hora: '))
+    salario = horas * tarifa
+    print(f'El salario es: ${salario}')
+    suma = suma + salario
+    i += 1
+    print('')
+
+print(f'La suma de todos los salarios es: ${suma}')
+"""
