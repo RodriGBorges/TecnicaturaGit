@@ -15,6 +15,7 @@ print(nombres[-2])
 
 """
 
+"""
 print(nombres[0:2]) # Solo muestra el indice 0, 1 pero no el indice 2
 
 # ir del inicio de la lista al indice (sin incluirlo)
@@ -105,10 +106,11 @@ cocina = tuple(cocinaLista)
 print('\n', cocina) # Con \n anulamos el end anterior
 
 # del cocina # esto es para eliminar la tupla
+"""
 
-
+# ------------------------------------------------------------------------------------------------------ #
 # Clase 2 #
-
+"""
 # Tipo set o conjunto (nos puede servir para evitar en una lista los datos duplicados ej: dni, matrícula)
 # No tienen índice fijo, van cambiando de forma aleatoria
 planetas = {'Marte', 'Júpiter', 'Venus'}
@@ -136,10 +138,10 @@ print(planetas)
 # Eliminar set
 del planetas
 
-
-# --------------------------------------------------- #
+"""
+# -------------------------- #
 # Diccionario #
-
+"""
 # 'Maradona':10 / Un diccionario está compuesto por dos elementos
 # Una llave y un valor
 # dict(key,value)
@@ -197,9 +199,9 @@ print(diccionario)
 
 # Eliminar diccionario
 del diccionario
-
-# ------------------------------------------------------ #
-
+"""
+# -------------------------- #
+"""
 # Concatenamos listas
 lista1 = [1, 2, 3, 1]
 lista2 = [4, 5, 6, 1]
@@ -232,11 +234,142 @@ print(lista3)
 
 lista3.sort(reverse=True) # Descendente
 print(lista3)
-
-# -------------------------------------------------------------------- #
+"""
+# -------------------------- #
+"""
 # Repaso de Tuplas
 tupla = (4, 'Hola Mundo', 6.78, [1, 2, 78], 4, 'Hola Mundo')
 print(tupla)
 
 print(4 in tupla) # Accion booleana, su respuesta es tipo booleana
 # Lo que podemos usar dentro de tuplas son: index, count, len
+"""
+# --------------------------------------------------------------------------------------------------- #
+# Clase 3 #
+
+# Para definir un conjunto
+"""
+conjunto1 = set() # la única manera de inicializar un conjunto es con la funcion set
+
+# conjunto1 = {} Con las llaves solas no se puede empezar un conjunto porque ya fue inicializado
+conjunto2 = {'bye', } # si queremos inicializarlo con llaves debemos inicializarlo con un elemento dentro y despues
+# podemos ir agregando más elementos
+
+conjunto1.add(7)
+conjunto1.add('Hola')
+print(conjunto1)
+
+conjunto2.add('hola')
+print(conjunto2)
+print(3 not in conjunto2) # preguntamos si el número 3 NO está en el conjunto1
+
+# Como hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2) # Nos devuelve como respuesta un booleano
+
+# Operaciones en conjuntos
+conjunto3 = conjunto1 | conjunto2 # La línea une a los dos conjuntos, si hay datos iguales se borran y queda 1 solo
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 # Que elemento tienen en comun
+print(conjunto3) # Si 1 y 2 poseen 'Hola' se va a guardar aquí
+
+conjunto3 = conjunto1 - conjunto2 # Asigna el valor que está en el conjunto1 y no en el conjunto2
+print(conjunto3)
+
+conjunto3 = conjunto2 - conjunto1 # mismo pero al revés
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 # elementos que no comparten o que son diferentes entre ambos
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2 # Si un conjunto es un subconjunto dentro de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto2.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issuperset(conjunto1)) # Si los elementos de conjunto1 están dentro del 3
+print(conjunto3.issuperset(conjunto2)) # Si es verdadero quiere decir que el conjunto3 es un superconjunto
+print(conjunto2.issuperset(conjunto3))
+
+# Como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en común
+print(conjunto1.isdisjoint(conjunto2)) # No hay cosas en común
+
+# Convertir un conjunto totalmente en inmutable
+conjunto1 = frozenset # Esto hace que el conjunto sea totalmente inmutable
+# No se pueden agregar, modificar o eliminar elementos del conjunto
+
+# listas{} son mutables, siguen un orden, saca elementos repetidos
+# tuplas() son inmutables, son desordenadas
+# diccionario{} lleva una llave y un valor, siguen un orden
+# set{} mutables e inmutables, son desordenadas
+"""
+# -------------------------- #
+"""
+# Repaso diccionarios
+diccionarioNuevo = {'Azul': 'Blue', 'Rojo': 'Red', 'Verde': 'Green', 'Amarillo': 'Yellow'}
+print(diccionarioNuevo)
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferente tipos de datos
+diccionario2 = {'Ariel': {'Edad': 40, 'Altura': 1.83}, 'Osvaldo': [45, 1.85], 'Natalia': [35, 1.67]}
+print(diccionario2)
+"""
+# -------------------------- #
+# Ejercicio
+"""
+seleccionArgentina = {
+    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
+    11: {'Nombre': 'Angel Di Maria', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo Derecho'},
+    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posicion': 'Media Punta'},
+    19: {'Nombre': 'Nicolas Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa Central'},
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'}
+}
+
+seleccionArgentina[23] = {'Nombre': 'Javier Mascherano', 'Edad': 38, 'Altura': 1.74, 'Precio': '30 Millones', 'Posicion': 'Defensa Central'}
+seleccionArgentina[20] = {'Nombre': 'Emiliano Martinez', 'Edad': 29, 'Altura': 1.95, 'Precio': '28 Millones', 'Posicion': 'Portero'}
+seleccionArgentina[12] = {'Nombre': 'Carlos Tevez', 'Edad': 38, 'Altura': 1.71, 'Precio': '40 Millones', 'Posicion': 'Mediapunta'}
+seleccionArgentina[13] = {'Nombre': 'Rodrigo de Paul', 'Edad': 28, 'Altura': 1.80, 'Precio': '40 Millones', 'Posicion': 'Mediocentro'}
+
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
+
+"""
+# -------------------------- #
+
+# Pilas usando listas
+pila = [1, 2, 3]
+
+# Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+# Sacar elementos desde el final
+elementoBorrado = pila.pop() # Quita el último elemento y lo guarda en la variable
+print(f'Sacamos el elemento {elementoBorrado}')
+print(f'La pila ahora quedo así {pila}')
+
+# Colas con listas
+# Estructura de datos de tipo fifo (first input / first output) primero en entrar / primero en salir
+
+cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
+
+# Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('José')
+print(cola)
+
+# Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
