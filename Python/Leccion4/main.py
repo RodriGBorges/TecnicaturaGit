@@ -335,6 +335,10 @@ seleccionArgentina[13] = {'Nombre': 'Rodrigo de Paul', 'Edad': 28, 'Altura': 1.8
 for llave, valor in seleccionArgentina.items():
     print(llave, valor)
 
+# Otra forma de mostrar
+for i in seleccionArgentina:
+    print(f'{i} -> {seleccionArgentina[i]}')
+
 """
 # -------------------------- #
 
