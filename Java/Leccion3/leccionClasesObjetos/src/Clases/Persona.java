@@ -18,5 +18,7 @@ nombre                                           instancia de una clase
 // La clase debe ser pública
 // Clase Persona (siempre PascalCase para las clases)
 public class Persona {
-    
+    //Atributos de la clase(Características)
+    String nombre;
+    String apellido;
 }
