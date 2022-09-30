@@ -13,6 +13,7 @@ miFuncion() # Se puede llamar a una función X cantidad de veces
 # Clase 6 #
 # Desempaquetado de listas o list Unpacking
 
+"""
 def show(name, lastName):
     print(name + ' ' + lastName)
 person = ["Ariel", "Betancud"]
@@ -79,3 +80,39 @@ def listarNombres(*nombres): # Normalmente se utiliza: *arg
 
 listarNombres('Lucas', 'José', 'Claudia', 'Rosa', 'María')
 listarNombres('Marcos', 'Daniel', 'Romina', 'Pepe', 'Marcela', 'Carlos')
+"""
+# ----------------------------------------------------------------------------------------------- #
+# Clase 7 #
+"""
+# def listarTerminos(**kwargs) # lo más utilizado es **kwargs(significa key word argument) para recibir los argumentos
+def listarTerminos(nombre, *nombres, **terminos):
+    for llave, valor in terminos.items():
+        print(f'{llave} : {valor}')
+
+listarTerminos() # Si no recibe nada, no muestra nada
+listarTerminos(IDE='Integrated Development Enviroment', PK='Primary Key')
+listarTerminos(Nombre='Leonel Messi')
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+
+nombres2 = ["Tito", "Pedro", "Carlos"]
+
+desplegarNombres(nombres2)
+desplegarNombres('Carla')
+# desplegarNombres(10, 11) # No es un objeto iterable
+desplegarNombres((10, 11)) # Con otros parentesis se convierte en una tupla, si queremos que sea con un elemento debe quedar (10, )
+desplegarNombres([22, 55]) # Se convierte en una lista
+"""
+# Funciones Recursivas
+
+def factorial(numero):
+    if(numero == 1):
+        return 1
+    else:
+        return numero * factorial(numero-1) # Caso recursivo
+
+numeroFactorial = int(input('Ingrese el número para calcular el factorial: '))
+resultado = factorial(numeroFactorial)
+print(f'El factorial del número {numeroFactorial} es: {resultado}')
