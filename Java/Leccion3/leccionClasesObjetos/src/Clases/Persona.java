@@ -19,9 +19,10 @@ nombre                                           instancia de una clase
 // La clase debe ser pública
 // Clase Persona (siempre PascalCase para las clases)
 public class Persona {
+    //public class => modificador de acceso
     //Atributos de la clase(Características)
-    String nombre;
-    String apellido;
+    public String nombre;
+    public String apellido;
     
     //Métodos de la clase (Acciones)
     public void obtenerInformacion(){
