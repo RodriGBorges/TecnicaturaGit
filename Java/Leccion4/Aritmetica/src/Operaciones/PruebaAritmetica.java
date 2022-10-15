@@ -34,12 +34,46 @@ public class PruebaAritmetica {
         // aritmetica1 = null otra forma 
         //System.gc() una forma de limpiar residuos pero NO SE UTILIZA, NO ES NECESARIO
         // gc = garbage collector
+        
+        //Persona persona = new Persona(new String("Rodrigo"), "Garayalde"); No es necesario
+        Persona persona = new Persona("Rodrigo", "Garayalde");
+        System.out.println("persona = " + persona);
+        System.out.println("Persona nombre: " + persona.nombre);
+        System.out.println("Persona apellido: " + persona.apellido);
     }
     
+    //Modularidad creamos un nuevo método
     public static void miMetodo(){
         //a = 10; // Una variable es limitada - los atributos, métodos, constructores transcienden
         int a = 10;
         System.out.println("Aquí hay otro método");
+    }
+}
+
+// Solo se puede crear una clase public -linea 4- (modificador de acceso)
+// Creamos una nueva clase
+class Persona {
+    String nombre;
+    String apellido;
+    
+    Persona(String nombre, String apellido) { //Constructor
+        super(); //LLamada al constructur de la clase Padre object
+        //Imprimir imprimir = new Imprimir();
+        new Imprimir().imprimir(this);
+        this.nombre = nombre;
+        this.apellido = apellido;
+        System.out.println("Objeto persona usando this: " + this);
+    }
+}
+
+class Imprimir {
+    public Imprimir() {
+        super(); // El constructor de la clase padre, para reservar memoria
+    }
+    
+    public void imprimir(Persona persona) {
+        System.out.println("Persona desde la clase imprimir: " + persona);
+        System.out.println("Impresión del objeto actual (this): " + this);
     }
 }
     
