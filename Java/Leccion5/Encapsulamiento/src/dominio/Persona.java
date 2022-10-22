@@ -4,6 +4,8 @@ package dominio;
 
 public class Persona {
     //Atributos
+    // String nombre; de esta forma queda como default o package
+    
     private String nombre;
     private double sueldo;
     private boolean eliminado;
@@ -39,5 +41,11 @@ public class Persona {
         this.eliminado = eliminado;
     }
     
+    public String toString() {
+        //Convierte en una cadena cada atributo
+        return "Persona [ nombre: " + this.nombre +
+                ", sueldo: " + this.sueldo +
+                ", eliminado: " + this.eliminado + " ]";
+    }
     
 }
