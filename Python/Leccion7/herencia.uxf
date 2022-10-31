@@ -1,0 +1,23 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>280</x><y>190</y><w>100</w><h>30</h></coordinates><panel_attributes>Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>300</y><w>100</w><h>30</h></coordinates><panel_attributes>Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>210</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>190</y><w>100</w><h>30</h></coordinates><panel_attributes>Object</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>300</y><w>100</w><h>30</h></coordinates><panel_attributes>Persona</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>400</y><w>100</w><h>30</h></coordinates><panel_attributes>Empleado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>210</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>320</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>370</y><w>100</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre
+-edad
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>510</y><w>100</w><h>60</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+-sueldo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>430</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLNote</id><coordinates><x>40</x><y>80</y><w>320</w><h>80</h></coordinates><panel_attributes>Una clase hereda sus características
+Clase Empleado es una extensión de la clase Persona
+Persona =&gt; Padre
+Empleado =&gt; Hijo
+bg=#0000</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>650</x><y>260</y><w>360</w><h>80</h></coordinates><panel_attributes>Clase Object es el padre de todas las clases dentro de Python
+Persona hereda de la clase Object (automáticamente)
+Empleado es hija de la clase Persona
+Empleado hereda Persona y Object de manera indirecta
+bg=#0000</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>60</x><y>460</y><w>140</w><h>70</h></coordinates><panel_attributes>Empleado hereda:
+-nombre
+-edad
+bg=#0000</panel_attributes><additional_attributes></additional_attributes></element></diagram>
