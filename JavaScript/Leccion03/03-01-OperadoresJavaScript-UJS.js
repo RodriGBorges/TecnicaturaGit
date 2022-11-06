@@ -14,3 +14,12 @@ if(edad >= adulto) {
 } else {
     console.log('No es mayor de edad');
 }
+
+//Ejercicio: Dentro de un rango
+let dentroRango = 5; //Cambiar valor
+let valorMin = 0, valorMax = 10;
+if(dentroRango >= valorMin && dentroRango <= valorMax) {
+    console.log('Está dentro del rango');
+} else {
+    console.log('No está dentro del rango');
+}

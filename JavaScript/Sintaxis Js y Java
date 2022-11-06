@@ -58,3 +58,7 @@ Operador de decremento
 --
 let z = --a; => PreDecremento 
 let z = a--; => PosDecremento
+
+Operadores Lógicos
+And => && Doble aspersan
+Or => || 

@@ -37,3 +37,10 @@ let rompiendo = 31; //No utilizar palabras reservadas para variables
 
 console.log(_1num);
 console.log(rompiendo);
+
+let nombr = 'Lucifer';
+console.log(nombr);
+
+//No se pueden modificar las variables const
+const apellid = "Morningstar";
+console.log(apellid);
