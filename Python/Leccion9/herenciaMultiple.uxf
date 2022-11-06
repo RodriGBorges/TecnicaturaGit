@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>14</zoom_level><element><id>UMLClass</id><coordinates><x>56</x><y>0</y><w>294</w><h>210</h></coordinates><panel_attributes>&lt;&lt;FiguraGeometrica&gt;&gt;
+--
++alto
++ancho
+--
++getAlto()
++setAlto(alto)
++getAncho()
++setAncho(ancho)
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>42</x><y>364</y><w>294</w><h>98</h></coordinates><panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+--
+-area()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>434</x><y>0</y><w>294</w><h>154</h></coordinates><panel_attributes>&lt;&lt;Color&gt;&gt;
+--
+-color
+--
++getColor()
++setColor(color)
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>196</y><w>126</w><h>196</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>16;11;20;120</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>140</y><w>462</w><h>252</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>306;11;10;160</additional_attributes></element><element><id>UMLNote</id><coordinates><x>770</x><y>0</y><w>420</w><h>140</h></coordinates><panel_attributes>FiguraGeometrica =&gt; Clase Padre
+Color =&gt; Clase Padre
+Cuadrado =&gt; Clase hija
+Cuadrado tiene mas de un padre
+Cuadrado hereda los atributos de las clases padre
+bg=#ffff</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>434</x><y>364</y><w>294</w><h>98</h></coordinates><panel_attributes>&lt;&lt;Rectangulo&gt;&gt;
+--
++area()
++__str__()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>140</y><w>126</w><h>266</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>16;161;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>196</y><w>462</w><h>210</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>306;121;10;10</additional_attributes></element></diagram>
