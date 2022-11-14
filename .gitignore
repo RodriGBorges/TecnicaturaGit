@@ -42,3 +42,12 @@
 /Java/Leccion4/ProyectoCaja/build/
 /Java/Leccion2/EjercicioCiclos10/nbproject/private/
 /Java/Leccion2/EjercicioCiclos10/build/
+*.properties
+*.class
+*.xml
+Java/Leccion7/Paquetes/build/classes/.netbeans_automatic_build
+Java/Leccion7/Paquetes/build/classes/.netbeans_update_resources
+Java/Leccion7/SobrecargaMetodos/build/classes/.netbeans_update_resources
+Java/Leccion8/PalabraFinal/build/classes/.netbeans_update_resources
+Java/Leccion8/PalabraFinal/build/classes/.netbeans_automatic_build
+Java/Leccion7/SobrecargaMetodos/build/classes/.netbeans_automatic_build
