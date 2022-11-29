@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>65</x><y>52</y><w>468</w><h>819</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>65</x><y>13</y><w>182</w><h>39</h></coordinates><panel_attributes>Un dominio, dirección</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>78</y><w>351</w><h>286</h></coordinates><panel_attributes>&lt;&lt;Orden&gt;&gt;
+--
+-idOrden
+-producto[ ]: Producto
+-ContadorOrdenes: int
+MAX_PRODUCTOS: int = 10
+--
++Orden()
++agregarProducto(producto: Producto): void
++calcularTotal(): double
++mostrarOrden(): void
+--
+Responsabilidades
+-- Crear objetos Orden
+-- Administrar los productos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>78</y><w>273</w><h>143</h></coordinates><panel_attributes>&lt;&lt;VentasTest&gt;&gt;
+--
++main(args: String[]): void
+--
+Responsabilidades
+-- Ejecutar la prueba de las aplicación de ventas</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>767</x><y>52</y><w>299</w><h>377</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>767</x><y>13</y><w>182</w><h>39</h></coordinates><panel_attributes>TestVentas</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>468</y><w>364</w><h>364</h></coordinates><panel_attributes>&lt;&lt;Producto&gt;&gt;
+--
+-idProducto: int
+-nombre: String
+-precio: double
+-contadorProductos: int
+--
+-Producto()
++Producto(nombre: String, precio: double
++getIdProducto(): int
++getNombre(): String
++setNombre(nombre: String): void
++getPrecio(): double
++setPrecio(precio: double): void
++toString(): String
+--
+Responsabilidades
+- Crear objetos de tipo producto
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>221</x><y>351</y><w>312</w><h>143</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Un producto se agrega a una orden&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>442</x><y>0</y><w>325</w><h>52</h></coordinates><panel_attributes>lt=&lt;.&gt;
+</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element></diagram>
