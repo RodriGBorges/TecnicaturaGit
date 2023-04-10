@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Leccion/.idea/Leccion.iml" filepath="$PROJECT_DIR$/../Leccion/.idea/Leccion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Python2/Excepciones/Leccion01/.idea/Leccion01.iml" filepath="$PROJECT_DIR$/../../Python2/Excepciones/Leccion01/.idea/Leccion01.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Leccion10/.idea/Leccion10.iml" filepath="$PROJECT_DIR$/../Leccion10/.idea/Leccion10.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Leccion11/.idea/Leccion11.iml" filepath="$PROJECT_DIR$/../Leccion11/.idea/Leccion11.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Leccion12/.idea/Leccion12.iml" filepath="$PROJECT_DIR$/../Leccion12/.idea/Leccion12.iml" />
