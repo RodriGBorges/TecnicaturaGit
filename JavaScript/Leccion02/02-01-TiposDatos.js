@@ -51,3 +51,26 @@ class Persona {
 
 console.log(Persona);
 console.log(typeof Persona);
+
+// Tipo de dato undefined
+var x;
+console.log(x);
+console.log(typeof x);
+x = undefined;
+console.log(x);
+
+
+// Tipo de dato null => significa ausencia de valor
+var y = null;
+// null no es un tipo de dato, pero su origen es object
+console.log(y);
+console.log(typeof y);
+
+// Tipo de dato array y Empty String
+var autos = ['Citroen', 'Audi', 'BMW', 'Ford'];
+console.log(autos);
+console.log(typeof autos);
+
+var z = '';
+console.log(z); //Una cadena vacía
+console.log(typeof z);

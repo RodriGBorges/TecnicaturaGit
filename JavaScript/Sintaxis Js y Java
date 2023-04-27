@@ -1,0 +1,64 @@
+Sintaxis similares entre Java y JavaScript
+
+Operadores Simplificados / Compuestos
++=
+-=
+*=
+/=
+%=
+**=
+
+Operadores Aritmeticos
++
+-
+*
+/
+% => Residuo
+** => Exponente
+
+Operadores Relacionales
+<
+>
+<=
+>=
+
+Operadores de Asignación
+=
+
+Los operadores simplificados también asignan
+
+Operadores de comparación
+== => Revisa el valor sin importar el tipo
+=== => Revisa el valor y el tipo
+
+Operador distinto
+!= => Comparador de valor sin importar el tipo
+!== => Comparador de valor y tipo
+
+Documentar
+// => Para una línea de comentario
+/* */ => Para múltiples líneas de comentario
+
+Secuencias de Escape
+\' => Mostrar una comilla simple dentro de una cadena en la salida de información
+\" => Mostrar doble comilla dentro de una cadena en la salida de información
+\\ => Barra invertida, diagonal inversa, es para mostrar una back slash
+\n => Salto de línea
+\r => Retorno
+\t => Tabulación
+\b => Retroceso
+\f => Salto de página
+
+Operador de Aumento
+++
+let z = ++a; => PreIncremento 
+let z = a++; => PosIncremento 
+
+Operador de decremento
+--
+let z = --a; => PreDecremento 
+let z = a--; => PosDecremento
+
+Operadores Lógicos
+And => && Doble aspersan
+Or => || 
