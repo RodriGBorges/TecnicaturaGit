@@ -3,3 +3,64 @@
 08:19:44 PM:WARNING [logger_base.py:16] Mensaje a nivel warning
 08:19:44 PM:ERROR [logger_base.py:17] Mensaje a nivel error
 08:19:44 PM:CRITICAL [logger_base.py:18] Mensaje a nivel critical
+08:36:46 PM:DEBUG [Persona.py:54] 
+        Id Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+08:38:03 PM:DEBUG [Persona.py:54] 
+        Id Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+08:39:11 PM:DEBUG [Persona.py:55] 
+        Id Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+08:39:11 PM:DEBUG [Persona.py:57] 
+        Id Persona: Jose
+        Nombre: Lepez
+        Apellido: ljose@mail.com
+        Email: None
+        
+08:39:39 PM:DEBUG [Persona.py:55] 
+        Id Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+08:39:39 PM:DEBUG [Persona.py:57] 
+        Id Persona: None
+        Nombre: Jose
+        Apellido: Lepez
+        Email: ljose@mail.com
+        
+08:40:28 PM:DEBUG [Persona.py:55] 
+        Id Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+08:40:28 PM:DEBUG [Persona.py:57] 
+        Id Persona: None
+        Nombre: Jose
+        Apellido: Lepez
+        Email: ljose@mail.com
+        
+08:40:28 PM:DEBUG [Persona.py:59] 
+        Id Persona: 1
+        Nombre: None
+        Apellido: None
+        Email: None
+        
+08:56:24 PM:DEBUG [conexion.py:25] Conexión Exitosa: <connection object at 0x0000026B90A03120; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:57:25 PM:ERROR [conexion.py:28] Ocurrió un error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgre"
+
+08:58:01 PM:DEBUG [conexion.py:25] Conexión Exitosa: <connection object at 0x000001D94F003120; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:58:01 PM:ERROR [conexion.py:41] Ocurrió un error: 'NoneType' object has no attribute 'cursor'
+08:59:28 PM:DEBUG [conexion.py:25] Conexión Exitosa: <connection object at 0x000002586F7D3120; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+08:59:28 PM:DEBUG [conexion.py:38] Se abrió correctamente el cursor: <cursor object at 0x000002586FDD3BC0; closed: 0>
